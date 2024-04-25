@@ -1,0 +1,104 @@
+.contenedor-botones{
+    justify-content: center;
+    display: flex;
+}
+
+button {
+    --color: #2600ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: white;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #2600ff;
+    transition: background 0s;
+   }
+
+   .contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap; /* Añadido para permitir que las tarjetas se ajusten en varias filas */
+    justify-content: center; /* Añadido para centrar las tarjetas horizontalmente */
+    }
+
+   .Card {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to right,rgb(30, 45, 255),rgb(30, 45, 255));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Card::before {
+    width: 150px;
+    height: 150px;
+    content: "";
+    background: linear-gradient(to right,rgb(30, 45, 255),rgb(251, 255, 9));
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    right: -25%;
+    top: -25%;
+  }
+  
+  .Heading {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(241, 241, 241);
+    z-index: 2;
+  }
+  
+  .Description {
+    font-size: 0.9em;
+    color: rgb(241, 241, 241);
+    z-index: 2;
+  }
+  
+  .Description a {
+    color: rgb(241, 241, 241);
+  }
+  

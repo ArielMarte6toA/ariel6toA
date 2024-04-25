@@ -1,0 +1,117 @@
+.btnws{
+    --color: #00ff37;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .btnws:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .btnws:hover {
+    color: white;
+   }
+   
+   .btnws:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .btnws:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .btnws:active:before {
+    background: #00ff37;
+    transition: background 0s;
+   }
+
+
+  .btnig{
+    --color: #000000;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background: none;
+   }
+  
+   .btnig:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(135deg, 
+    #405DE6 0%,   /* Azul */
+    #5851DB 15%,  /* Morado */
+    #833AB4 30%,  /* Rosa */
+    #FD1D1D 45%,  /* Naranja */
+    #F56040 60%,  /* Amarillo */
+    #FFC837 75%  /* Amarillo-Verde */
+  ); 
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   .btnig:hover {
+    color: white;
+   }
+   
+   .btnig:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .btnig:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+
+   .btnws:active:before {
+    background: linear-gradient(135deg, 
+      #405DE6 0%,   /* Azul */
+      #5851DB 15%,  /* Morado */
+      #833AB4 30%,  /* Rosa */
+      #FD1D1D 45%,  /* Naranja */
+      #F56040 60%,  /* Amarillo */
+      #FFC837 75%  /* Amarillo-Verde */
+    ); 
+    transition: background 0s;
+   }
+ 
+  
+
+  
+ 
